@@ -1,0 +1,5 @@
+"use client";
+import { useEffect,useState } from "react";
+import { Moon,Sun } from "lucide-react";
+export function Logo(){const [failed,setFailed]=useState(false);return <div className="flex items-center gap-2 font-black tracking-[-.05em] text-xl" aria-label="FOCUS.GG">{!failed?<picture><source media="(prefers-color-scheme: dark)" srcSet="/FOCUS.GG_branco.png"/><img className="h-8 w-auto" src="/FOCUS.GG.png" onError={()=>setFailed(true)} alt="FOCUS.GG"/></picture>:<><span className="h-3 w-3 rounded-full bg-[var(--purple)]"/>FOCUS.GG</>}</div>}
+export function ThemeToggle(){const [dark,setDark]=useState(true);useEffect(()=>{const v=localStorage.getItem("focus-theme")!=="light";setDark(v);document.documentElement.classList.toggle("dark",v)},[]);function toggle(){const v=!dark;setDark(v);document.documentElement.classList.toggle("dark",v);localStorage.setItem("focus-theme",v?"dark":"light")}return <button className="btn !p-2.5" onClick={toggle} aria-label="Alternar tema">{dark?<Sun size={18}/>:<Moon size={18}/>}</button>}

@@ -1,0 +1,501 @@
+{
+  "name": "focus-gg",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "focus-gg",
+      "dependencies": {
+        "@supabase/ssr": "latest",
+        "@supabase/supabase-js": "latest",
+        "lucide-react": "latest",
+        "next": "^16.3.0",
+        "react": "19.1.0",
+        "react-dom": "19.1.0"
+      },
+      "devDependencies": {
+        "@tailwindcss/postcss": "latest",
+        "@types/node": "latest",
+        "@types/react": "latest",
+        "@types/react-dom": "latest",
+        "tailwindcss": "latest",
+        "typescript": "latest"
+      }
+    },
+    "node_modules/@alloc/quick-lru": {
+      "version": "5.2.0",
+      "resolved": "https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz",
+      "integrity": "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==",
+      "dev": true,
+      "license": "MIT",
+      "engines": {
+        "node": ">=10"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/@emnapi/runtime": {
+      "version": "1.11.3",
+      "resolved": "https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.11.3.tgz",
+      "integrity": "sha512-Xz4Tpyki7XyrpbUK1jR1AhdAdaXyhhY4lZ3neLodmhpuWfy2PAQN5B46sAiU4liOXGLkHypn/qU+jvfWSCYYLA==",
+      "license": "MIT",
+      "optional": true,
+      "dependencies": {
+        "tslib": "^2.4.0"
+      }
+    },
+    "node_modules/@img/colour": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/@img/colour/-/colour-1.1.0.tgz",
+      "integrity": "sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==",
+      "license": "MIT",
+      "optional": true,
+      "engines": {
+        "node": ">=18"
+      }
+    },
+    "node_modules/@img/sharp-darwin-arm64": {
+      "version": "0.35.3",
+      "resolved": "https://registry.npmjs.org/@img/sharp-darwin-arm64/-/sharp-darwin-arm64-0.35.3.tgz",
+      "integrity": "sha512-RMnFX7YQsMoh7lWfcM4NEHHymBX/rLuKNPVM84XE9ONPcaSCDgE7CHIHpSgPcO2xcRthgBy1HfNO319mwhIAkg==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "Apache-2.0",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": ">=20.9.0"
+      },
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      },
+      "optionalDependencies": {
+        "@img/sharp-libvips-darwin-arm64": "1.3.2"
+      }
+    },
+    "node_modules/@img/sharp-darwin-x64": {
+      "version": "0.35.3",
+      "resolved": "https://registry.npmjs.org/@img/sharp-darwin-x64/-/sharp-darwin-x64-0.35.3.tgz",
+      "integrity": "sha512-Xo+5uFBtLN0BKqieTxiFzFPQAUlBbbH5iBKyRX/z1JrbnYsHTfKJnUfL8+p2TPXr1pXqao4eeL4Rl144uDpK9w==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "Apache-2.0",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "engines": {
+        "node": ">=20.9.0"
+      },
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      },
+      "optionalDependencies": {
+        "@img/sharp-libvips-darwin-x64": "1.3.2"
+      }
+    },
+    "node_modules/@img/sharp-freebsd-wasm32": {
+      "version": "0.35.3",
+      "resolved": "https://registry.npmjs.org/@img/sharp-freebsd-wasm32/-/sharp-freebsd-wasm32-0.35.3.tgz",
+      "integrity": "sha512-lUxcqWIj2wMQ9BrwNjngcr1gWUr5xgaGThBRqPPalIC2n67Cqj1uPh8NnA/ZhAg8hUbKl+kVHKwgUIwe6ZYPrg==",
+      "license": "Apache-2.0",
+      "optional": true,
+      "os": [
+        "freebsd"
+      ],
+      "dependencies": {
+        "@img/sharp-wasm32": "0.35.3"
+      },
+      "engines": {
+        "node": ">=20.9.0"
+      },
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      }
+    },
+    "node_modules/@img/sharp-libvips-darwin-arm64": {
+      "version": "1.3.2",
+      "resolved": "https://registry.npmjs.org/@img/sharp-libvips-darwin-arm64/-/sharp-libvips-darwin-arm64-1.3.2.tgz",
+      "integrity": "sha512-9J6ypZFpQBj4YnePGoq/S38w6nz+vqg5WZLrLGY4YuSemdMq47GMLBPO42MzwdGwpg/agZ7xzZcFHa48xlywfg==",
+      "cpu": [
+        "arm64"
+      ],
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      }
+    },
+    "node_modules/@img/sharp-libvips-darwin-x64": {
+      "version": "1.3.2",
+      "resolved": "https://registry.npmjs.org/@img/sharp-libvips-darwin-x64/-/sharp-libvips-darwin-x64-1.3.2.tgz",
+      "integrity": "sha512-m2pW1n6cns9VaubNwsZ+c3CRYjxNQWgJ5gPlnL1nbBcpkBvFm6SCFN5o0psFHI8w9n11NKhFkeEDns98tiqbEw==",
+      "cpu": [
+        "x64"
+      ],
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "os": [
+        "darwin"
+      ],
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      }
+    },
+    "node_modules/@img/sharp-libvips-linux-arm": {
+      "version": "1.3.2",
+      "resolved": "https://registry.npmjs.org/@img/sharp-libvips-linux-arm/-/sharp-libvips-linux-arm-1.3.2.tgz",
+      "integrity": "sha512-1eMLzy92I4J6rmi4mAT8yC3HxOtniyGELlzGbNMLLeqe052ahFQ0h6LFq+lh5DsDIdYViIDst08abvSbcEdLXQ==",
+      "cpu": [
+        "arm"
+      ],
+      "libc": [
+        "glibc"
+      ],
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      }
+    },
+    "node_modules/@img/sharp-libvips-linux-arm64": {
+      "version": "1.3.2",
+      "resolved": "https://registry.npmjs.org/@img/sharp-libvips-linux-arm64/-/sharp-libvips-linux-arm64-1.3.2.tgz",
+      "integrity": "sha512-dqVSFynCox4C/J8kT16V7SIFAns0IjgLwkvYT7p8LQVmJ5OS5b6tI9IGflxTeuBS//zXeFIUbwt5dwxyZ17cnA==",
+      "cpu": [
+        "arm64"
+      ],
+      "libc": [
+        "glibc"
+      ],
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      }
+    },
+    "node_modules/@img/sharp-libvips-linux-ppc64": {
+      "version": "1.3.2",
+      "resolved": "https://registry.npmjs.org/@img/sharp-libvips-linux-ppc64/-/sharp-libvips-linux-ppc64-1.3.2.tgz",
+      "integrity": "sha512-3z0NHDxD6n5I9gc05U1eW1AyRm+Gznzq3naMrthPNqE6oYykcogW0l/jfpJdjYnuNl8R7yI9pNbE1XiUeyq0Aw==",
+      "cpu": [
+        "ppc64"
+      ],
+      "libc": [
+        "glibc"
+      ],
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      }
+    },
+    "node_modules/@img/sharp-libvips-linux-riscv64": {
+      "version": "1.3.2",
+      "resolved": "https://registry.npmjs.org/@img/sharp-libvips-linux-riscv64/-/sharp-libvips-linux-riscv64-1.3.2.tgz",
+      "integrity": "sha512-bsb4rI+NldGOsXuej2r8OdSS8+zXDVaCWxyWrcv6kneTOlgAHtZABRzBBCwdsPiD90J4myNJuHpg6kA20ImW/w==",
+      "cpu": [
+        "riscv64"
+      ],
+      "libc": [
+        "glibc"
+      ],
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      }
+    },
+    "node_modules/@img/sharp-libvips-linux-s390x": {
+      "version": "1.3.2",
+      "resolved": "https://registry.npmjs.org/@img/sharp-libvips-linux-s390x/-/sharp-libvips-linux-s390x-1.3.2.tgz",
+      "integrity": "sha512-/ABshyj8gCpyIrNXnHn4LorDJ0HHm1VhXPBlxZ8zAtfVPAaSafXPGn+sUSIRiwaSBy0mmFjSjiXI5mkcwdChKQ==",
+      "cpu": [
+        "s390x"
+      ],
+      "libc": [
+        "glibc"
+      ],
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      }
+    },
+    "node_modules/@img/sharp-libvips-linux-x64": {
+      "version": "1.3.2",
+      "resolved": "https://registry.npmjs.org/@img/sharp-libvips-linux-x64/-/sharp-libvips-linux-x64-1.3.2.tgz",
+      "integrity": "sha512-ITPEtgffGJ0S6G9dRyw/366tJQqFRcHWPHhC+Stpg3Z8AEMrDrTr2lhdz4f/Y/HMbRh//7Z5mBzEpVdi62Oc3w==",
+      "cpu": [
+        "x64"
+      ],
+      "libc": [
+        "glibc"
+      ],
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      }
+    },
+    "node_modules/@img/sharp-libvips-linuxmusl-arm64": {
+      "version": "1.3.2",
+      "resolved": "https://registry.npmjs.org/@img/sharp-libvips-linuxmusl-arm64/-/sharp-libvips-linuxmusl-arm64-1.3.2.tgz",
+      "integrity": "sha512-zE9EdiUzUmg5mDT5a1rk5fYJ6GWPloTwWBYDS14naqHsL+EaMpDj1AWnpLgh3u0YCORv2Tt50wrcrpYqkP97Kw==",
+      "cpu": [
+        "arm64"
+      ],
+      "libc": [
+        "musl"
+      ],
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      }
+    },
+    "node_modules/@img/sharp-libvips-linuxmusl-x64": {
+      "version": "1.3.2",
+      "resolved": "https://registry.npmjs.org/@img/sharp-libvips-linuxmusl-x64/-/sharp-libvips-linuxmusl-x64-1.3.2.tgz",
+      "integrity": "sha512-m0lrLiUt+lBYnCFr8qV/65yMR4E/c7/wf78I5eKTdkEakFAlZ9QlzEM3QIhhAwVeUhLAHLcCq7a7Vszq/oFNZQ==",
+      "cpu": [
+        "x64"
+      ],
+      "libc": [
+        "musl"
+      ],
+      "license": "LGPL-3.0-or-later",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      }
+    },
+    "node_modules/@img/sharp-linux-arm": {
+      "version": "0.35.3",
+      "resolved": "https://registry.npmjs.org/@img/sharp-linux-arm/-/sharp-linux-arm-0.35.3.tgz",
+      "integrity": "sha512-affVWCTLooy8TSxbDx2qkzuDeaWLNVBA+P//FNBirHsXpP2fuBhk5AuboYUnrDnzoXes8GFjpTx0SBFOCRg+FA==",
+      "cpu": [
+        "arm"
+      ],
+      "libc": [
+        "glibc"
+      ],
+      "license": "Apache-2.0",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=20.9.0"
+      },
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      },
+      "optionalDependencies": {
+        "@img/sharp-libvips-linux-arm": "1.3.2"
+      }
+    },
+    "node_modules/@img/sharp-linux-arm64": {
+      "version": "0.35.3",
+      "resolved": "https://registry.npmjs.org/@img/sharp-linux-arm64/-/sharp-linux-arm64-0.35.3.tgz",
+      "integrity": "sha512-QgKDspHPnrU+GQ55XPhGwyhC8acLVOOSyAvo1oVfFmrIXLkDNmGWzAfDZ4xK8oSA1qBQrALcHX0G5UZni/SuFQ==",
+      "cpu": [
+        "arm64"
+      ],
+      "libc": [
+        "glibc"
+      ],
+      "license": "Apache-2.0",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=20.9.0"
+      },
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      },
+      "optionalDependencies": {
+        "@img/sharp-libvips-linux-arm64": "1.3.2"
+      }
+    },
+    "node_modules/@img/sharp-linux-ppc64": {
+      "version": "0.35.3",
+      "resolved": "https://registry.npmjs.org/@img/sharp-linux-ppc64/-/sharp-linux-ppc64-0.35.3.tgz",
+      "integrity": "sha512-sMd8rDxmpLOwv/7N44klFjOD5DUO7FLdjiXDI0hoxYaf7Ar262dQIEkosE98bps+5HPLtp/EvNqeqQtOycP/IA==",
+      "cpu": [
+        "ppc64"
+      ],
+      "libc": [
+        "glibc"
+      ],
+      "license": "Apache-2.0",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=20.9.0"
+      },
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      },
+      "optionalDependencies": {
+        "@img/sharp-libvips-linux-ppc64": "1.3.2"
+      }
+    },
+    "node_modules/@img/sharp-linux-riscv64": {
+      "version": "0.35.3",
+      "resolved": "https://registry.npmjs.org/@img/sharp-linux-riscv64/-/sharp-linux-riscv64-0.35.3.tgz",
+      "integrity": "sha512-0Eob78yjlYPfL5vMNWAW55l3R9Y6BQS/gOfe0ZcP9mEz9ohhKSt4im1hayiknXgf8AWrFqMvJcKIdmLmEe7yeQ==",
+      "cpu": [
+        "riscv64"
+      ],
+      "libc": [
+        "glibc"
+      ],
+      "license": "Apache-2.0",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=20.9.0"
+      },
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      },
+      "optionalDependencies": {
+        "@img/sharp-libvips-linux-riscv64": "1.3.2"
+      }
+    },
+    "node_modules/@img/sharp-linux-s390x": {
+      "version": "0.35.3",
+      "resolved": "https://registry.npmjs.org/@img/sharp-linux-s390x/-/sharp-linux-s390x-0.35.3.tgz",
+      "integrity": "sha512-KgAxQ0DxpNOq1rG2t5cgTgShJFGSuU7XO45cqC+1NVOuZnP6tlgZRuSYOfNupGkHID0o3cJOsw4DVeJpMovcGw==",
+      "cpu": [
+        "s390x"
+      ],
+      "libc": [
+        "glibc"
+      ],
+      "license": "Apache-2.0",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=20.9.0"
+      },
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      },
+      "optionalDependencies": {
+        "@img/sharp-libvips-linux-s390x": "1.3.2"
+      }
+    },
+    "node_modules/@img/sharp-linux-x64": {
+      "version": "0.35.3",
+      "resolved": "https://registry.npmjs.org/@img/sharp-linux-x64/-/sharp-linux-x64-0.35.3.tgz",
+      "integrity": "sha512-8pqvxubL2PGdhlPy6GLqzDYMUjyRmKAwKHYKixpdJYBUK7PJ0C029XdsnpFIdgRZG68fZiGdHVWcKPvtiPB4cA==",
+      "cpu": [
+        "x64"
+      ],
+      "libc": [
+        "glibc"
+      ],
+      "license": "Apache-2.0",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=20.9.0"
+      },
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      },
+      "optionalDependencies": {
+        "@img/sharp-libvips-linux-x64": "1.3.2"
+      }
+    },
+    "node_modules/@img/sharp-linuxmusl-arm64": {
+      "version": "0.35.3",
+      "resolved": "https://registry.npmjs.org/@img/sharp-linuxmusl-arm64/-/sharp-linuxmusl-arm64-0.35.3.tgz",
+      "integrity": "sha512-Vz0iQjzzcSX3HCbfwFfCSG/9SCIqyO0mH2sXyiHaAYfBk0cRsCWXRyQYX0ovCK/PAQBbTzQ0dsPQHh5MAFL59w==",
+      "cpu": [
+        "arm64"
+      ],
+      "libc": [
+        "musl"
+      ],
+      "license": "Apache-2.0",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=20.9.0"
+      },
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      },
+      "optionalDependencies": {
+        "@img/sharp-libvips-linuxmusl-arm64": "1.3.2"
+      }
+    },
+    "node_modules/@img/sharp-linuxmusl-x64": {
+      "version": "0.35.3",
+      "resolved": "https://registry.npmjs.org/@img/sharp-linuxmusl-x64/-/sharp-linuxmusl-x64-0.35.3.tgz",
+      "integrity": "sha512-6O1NPKcDVj9QEdg7Hx549EX8U0rp6yXQERqru6yRN7fGBn32UvIRJUlWnk+8xDCiG76hXVBbX82NZ/ZKr0euIg==",
+      "cpu": [
+        "x64"
+      ],
+      "libc": [
+        "musl"
+      ],
+      "license": "Apache-2.0",
+      "optional": true,
+      "os": [
+        "linux"
+      ],
+      "engines": {
+        "node": ">=20.9.0"
+      },
+      "funding": {
+        "url": "https://opencollective.com/libvips"
+      },
+      "optionalDependencies×Ž»îÚ$z{-®éÜj× ¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2öÆ–v‡Fæ–æv772ÖÆ–çW‚×ƒcBÖvçR#¢°¢'fW'6–öâ#¢#ã3"ã"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&röÆ–v‡Fæ–æv772ÖÆ–çW‚×ƒcBÖvçRòÒöÆ–v‡Fæ–æv772ÖÆ–çW‚×ƒcBÖvçRÓã3"ãçFw¢"À¢&–çFVw&—G’#¢'6†S"Õcu#S$–…¦ÖDµg"µgGs†òµtÇ5¥”5FC†Æô–gFÕ%tuU¦d$õ”T¦W”¤–·t”DÕ¥uƒ#GTÖgu7‡„“‡‡"ôÖ$ôÓÒ"À¢&7R#¢°¢'ƒcB ¢ÒÀ¢&FWb#¢G'VRÀ¢&Æ–&2#¢°¢&vÆ–&2 ¢ÒÀ¢&Æ–6Vç6R#¢$ÕÂÓ"ã"À¢&÷F–öæÂ#¢G'VRÀ¢&÷2#¢°¢&Æ–çW‚ ¢ÒÀ¢&Væv–æW2#¢°¢&æöFR#¢#ãÒ"ãã ¢ÒÀ¢&gVæF–ær#¢°¢'G—R#¢&÷Væ6öÆÆV7F—fR"À¢'W&Â#¢&‡GG3¢òö÷Væ6öÆÆV7F—fRæ6öÒ÷&6VÂ ¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2öÆ–v‡Fæ–æv772ÖÆ–çW‚×ƒcBÖ×W6Â#¢°¢'fW'6–öâ#¢#ã3"ã"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&röÆ–v‡Fæ–æv772ÖÆ–çW‚×ƒcBÖ×W6ÂòÒöÆ–v‡Fæ–æv772ÖÆ–çW‚×ƒcBÖ×W6ÂÓã3"ãçFw¢"À¢&–çFVw&—G’#¢'6†S"Ö%–4Çµf#w6•†róƒT5&W¤5”„æsöÃ6×Cw¤†åuc•…sW4¶RõD6Duv"÷¤$Ó%Tbô†'5bö£%U$äö•gW…vsÓÒ"À¢&7R#¢°¢'ƒcB ¢ÒÀ¢&FWb#¢G'VRÀ¢&Æ–&2#¢°¢&×W6Â ¢ÒÀ¢&Æ–6Vç6R#¢$ÕÂÓ"ã"À¢&÷F–öæÂ#¢G'VRÀ¢&÷2#¢°¢&Æ–çW‚ ¢ÒÀ¢&Væv–æW2#¢°¢&æöFR#¢#ãÒ"ãã ¢ÒÀ¢&gVæF–ær#¢°¢'G—R#¢&÷Væ6öÆÆV7F—fR"À¢'W&Â#¢&‡GG3¢òö÷Væ6öÆÆV7F—fRæ6öÒ÷&6VÂ ¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2öÆ–v‡Fæ–æv772×v–ã3"Ö&ÓcBÖ×7f2#¢°¢'fW'6–öâ#¢#ã3"ã"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&röÆ–v‡Fæ–æv772×v–ã3"Ö&ÓcBÖ×7f2òÒöÆ–v‡Fæ–æv772×v–ã3"Ö&ÓcBÖ×7f2Óã3"ãçFw¢"À¢&–çFVw&—G’#¢'6†S"Ó…6$3„%#C3f&4Ó‡6'E”E7tUeCD¦ÄeDöÆC6utt†eF…F4&ääD&FfUE¦W&öfÄ”¦„gƒ·¦t„¦Ö5FävGsÓÒ"À¢&7R#¢°¢&&ÓcB ¢ÒÀ¢&FWb#¢G'VRÀ¢&Æ–6Vç6R#¢$ÕÂÓ"ã"À¢&÷F–öæÂ#¢G'VRÀ¢&÷2#¢°¢'v–ã3" ¢ÒÀ¢&Væv–æW2#¢°¢&æöFR#¢#ãÒ"ãã ¢ÒÀ¢&gVæF–ær#¢°¢'G—R#¢&÷Væ6öÆÆV7F—fR"À¢'W&Â#¢&‡GG3¢òö÷Væ6öÆÆV7F—fRæ6öÒ÷&6VÂ ¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2öÆ–v‡Fæ–æv772×v–ã3"×ƒcBÖ×7f2#¢°¢'fW'6–öâ#¢#ã3"ã"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&röÆ–v‡Fæ–æv772×v–ã3"×ƒcBÖ×7f2òÒöÆ–v‡Fæ–æv772×v–ã3"×ƒcBÖ×7f2Óã3"ãçFw¢"À¢&–çFVw&—G’#¢'6†S"Ô×”"õ6õ¥–DF“´g&ö¦æ÷Ç…–…EvóU†”Ã„Ud§%g4#„&ô3usedwECt´6VÖ§“†2¶Æ÷T¦æ¥3uS‡ƒ6#eÓÒ"À¢&7R#¢°¢'ƒcB ¢ÒÀ¢&FWb#¢G'VRÀ¢&Æ–6Vç6R#¢$ÕÂÓ"ã"À¢&÷F–öæÂ#¢G'VRÀ¢&÷2#¢°¢'v–ã3" ¢ÒÀ¢&Væv–æW2#¢°¢&æöFR#¢#ãÒ"ãã ¢ÒÀ¢&gVæF–ær#¢°¢'G—R#¢&÷Væ6öÆÆV7F—fR"À¢'W&Â#¢&‡GG3¢òö÷Væ6öÆÆV7F—fRæ6öÒ÷&6VÂ ¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2öÇV6–FR×&V7B#¢°¢'fW'6–öâ#¢#ã#‚ã"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&röÇV6–FR×&V7BòÒöÇV6–FR×&V7BÓã#‚ãçFw¢"À¢&–çFVw&—G’#¢'6†S"Öd$d¥TÇ4wTDG–F§b³f&ÆV´r÷4$”Ó#•FW'¤Æ¦3–%T´4Vg%63E¥¶##Tµ'£DôÔ¶Cƒv5¥F#VFwrõCd·VefsÓÒ"À¢&Æ–6Vç6R#¢$•42"À¢'VW$FWVæFVæ6–W2#¢°¢'&V7B#¢%ãbãRãÇÂãrããÇÂã‚ããÇÂã’ãã ¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2öÖv–2×7G&–ær#¢°¢'fW'6–öâ#¢#ã3ã#"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&röÖv–2×7G&–æròÒöÖv–2×7G&–ærÓã3ã#çFw¢"À¢&–çFVw&—G’#¢'6†S"×fC$cE•W”U„´v4Ä†÷µDW”6§‡VU6T†äg‡—–¤çƒ–s…cGeV†äFW"öÇgfÇÒö$#V%…ãT³"ó6ö–ç”5'—ƒ…C$5ÓÒ"À¢&FWb#¢G'VRÀ¢&Æ–6Vç6R#¢$Ô•B"À¢&FWVæFVæ6–W2#¢°¢$§&–FvWvVÆÂ÷6÷W&6VÖÖ6öFV2#¢%ããRãR ¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2öææö–B#¢°¢'fW'6–öâ#¢#2ã2ãr"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&röææö–BòÒöææö–BÓ2ã2ãrçFw¢"À¢&–çFVw&—G’#¢'6†S"×…Æc4„ôÖÆt‡ã#CrôÅ'Tõ–Ô#vE„¢ôGd„wg54&–£CU‡D%6Õ–7R´c„ôF$‡vç2õ‡”e¦w”Ã´£öfgsSsÓÒ"À¢&gVæF–ær#¢°¢°¢'G—R#¢&v—F‡V""À¢'W&Â#¢&‡GG3¢òöv—F‡V"æ6öÒ÷7öç6÷'2ö’ ¢Ð¢ÒÀ¢&Æ–6Vç6R#¢$Ô•B"À¢&&–â#¢°¢&ææö–B#¢&&–âöææö–Bæ6§2 ¢ÒÀ¢&Væv–æW2#¢°¢&æöFR#¢%ãÇÂã"ÇÂã2ãrÇÂãBÇÂãÓRãã ¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2öæW‡B#¢°¢'fW'6–öâ#¢#bã2ã"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&röæW‡BòÒöæW‡BÓbã2ãçFw¢"À¢&–çFVw&—G’#¢'6†S"ÔäVDt÷¤‚³†UE„ÕW•U–´“”æ†“TãeF‡&†3¦tdõvfvät²öD&…'t'†W¶W†De&çvÅ&bó5v—‡—†ÄÄ%WS$ÓÒ"À¢&Æ–6Vç6R#¢$Ô•B"À¢&FWVæFVæ6–W2#¢°¢$æW‡BöVçb#¢#bã2ã"À¢$7v2ö†VÇW'2#¢#ãRãR"À¢&&6VÆ–æRÖ'&÷w6W"ÖÖ–ær#¢%ã"ã’ã’"À¢&6æ—W6RÖÆ—FR#¢%ããã3Ss’"À¢'÷7F772#¢#‚ãRã#2"À¢'7G–ÆVBÖ§7‚#¢#Rããb ¢ÒÀ¢&&–â#¢°¢&æW‡B#¢&F—7Bö&–âöæW‡B ¢ÒÀ¢&Væv–æW2#¢°¢&æöFR#¢#ãÓ#ã’ã ¢ÒÀ¢&÷F–öæÄFWVæFVæ6–W2#¢°¢$æW‡B÷7v2ÖF'v–âÖ&ÓcB#¢#bã2ã"À¢$æW‡B÷7v2ÖF'v–â×ƒcB#¢#bã2ã"À¢$æW‡B÷7v2ÖÆ–çW‚Ö&ÓcBÖvçR#¢#bã2ã"À¢$æW‡B÷7v2ÖÆ–çW‚Ö&ÓcBÖ×W6Â#¢#bã2ã"À¢$æW‡B÷7v2ÖÆ–çW‚×ƒcBÖvçR#¢#bã2ã"À¢$æW‡B÷7v2ÖÆ–çW‚×ƒcBÖ×W6Â#¢#bã2ã"À¢$æW‡B÷7v2×v–ã3"Ö&ÓcBÖ×7f2#¢#bã2ã"À¢$æW‡B÷7v2×v–ã3"×ƒcBÖ×7f2#¢#bã2ã"À¢'6†'#¢%ãã3Rã2 ¢ÒÀ¢'VW$FWVæFVæ6–W2#¢°¢$÷VçFVÆVÖWG'’ö’#¢%ããã"À¢$Æ—w&–v‡B÷FW7B#¢%ããSã"À¢&&&VÂ×ÇVv–â×&V7BÖ6ö×–ÆW"#¢"¢"À¢'&V7B#¢%ã‚ã"ãÇÂ’ãã×&2ÖFSc†C&cBÓ##C#BÇÂã’ãã"À¢'&V7BÖFöÒ#¢%ã‚ã"ãÇÂ’ãã×&2ÖFSc†C&cBÓ##C#BÇÂã’ãã"À¢'672#¢%ãã2ã ¢ÒÀ¢'VW$FWVæFVæ6–W4ÖWF#¢°¢$÷VçFVÆVÖWG'’ö’#¢°¢&÷F–öæÂ#¢G'VP¢ÒÀ¢$Æ—w&–v‡B÷FW7B#¢°¢&÷F–öæÂ#¢G'VP¢ÒÀ¢&&&VÂ×ÇVv–â×&V7BÖ6ö×–ÆW"#¢°¢&÷F–öæÂ#¢G'VP¢ÒÀ¢'672#¢°¢&÷F–öæÂ#¢G'VP¢Ð¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2öæW‡BöæöFUöÖöGVÆW2÷÷7F772#¢°¢'fW'6–öâ#¢#‚ãRã#2"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&r÷÷7F772òÒ÷÷7F772Ó‚ãRã#2çFw¢"À¢&–çFVw&—G’#¢'6†S"ÖsSSƒg§#F%¦×tf•FÆfÄ×S„S$EF#T“VvW'Fwt¶×6EVÅE–…§GVç¥VÄCu7§v5euôg7$gfÆd4Cvõ‡e'vvsÓÒ"À¢&gVæF–ær#¢°¢°¢'G—R#¢&÷Væ6öÆÆV7F—fR"À¢'W&Â#¢&‡GG3¢òö÷Væ6öÆÆV7F—fRæ6öÒ÷÷7F772ò ¢ÒÀ¢°¢'G—R#¢'F–FVÆ–gB"À¢'W&Â#¢&‡GG3¢ò÷F–FVÆ–gBæ6öÒögVæF–æröv—F‡V"öçÒ÷÷7F772 ¢ÒÀ¢°¢'G—R#¢&v—F‡V""À¢'W&Â#¢&‡GG3¢òöv—F‡V"æ6öÒ÷7öç6÷'2ö’ ¢Ð¢ÒÀ¢&Æ–6Vç6R#¢$Ô•B"À¢&FWVæFVæ6–W2#¢°¢&ææö–B#¢%ã2ã2ãb"À¢'–6ö6öÆ÷'2#¢%ããã"À¢'6÷W&6RÖÖÖ§2#¢%ãã"ã ¢ÒÀ¢&Væv–æW2#¢°¢&æöFR#¢%ãÇÂã"ÇÂãÓB ¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2÷–6ö6öÆ÷'2#¢°¢'fW'6–öâ#¢#ãã"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&r÷–6ö6öÆ÷'2òÒ÷–6ö6öÆ÷'2ÓããçFw¢"À¢&–çFVw&—G’#¢'6†S"×†6Tƒ'6æ‡F#TÓ–Æ—G6ÔWsSfÆS3sfÕE¦´U‚ö¤V"õ'„äg–VtçVÃvTç6Ä5…”dF¢ôÆ7Sƒ„´W”Ö6U&çG‡$DUdÓÒ"À¢&Æ–6Vç6R#¢$•42 ¢ÒÀ¢&æöFUöÖöGVÆW2÷÷7F772#¢°¢'fW'6–öâ#¢#‚ãRã#R"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&r÷÷7F772òÒ÷÷7F772Ó‚ãRã#RçFw¢"À¢&–çFVw&—G’#¢'6†S"ÔEEƒ5%u56åw—¤Ç…æÄƒ$¥´UsVV¶Ãe¥SB÷6$–„SS6´¦fFvãWd´Ò·…w”§E…gR¶æfEdfÖÆtdDT´SE—sÓÒ"À¢&FWb#¢G'VRÀ¢&gVæF–ær#¢°¢°¢'G—R#¢&÷Væ6öÆÆV7F—fR"À¢'W&Â#¢&‡GG3¢òö÷Væ6öÆÆV7F—fRæ6öÒ÷÷7F772ò ¢ÒÀ¢°¢'G—R#¢'F–FVÆ–gB"À¢'W&Â#¢&‡GG3¢ò÷F–FVÆ–gBæ6öÒögVæF–æröv—F‡V"öçÒ÷÷7F772 ¢ÒÀ¢°¢'G—R#¢&v—F‡V""À¢'W&Â#¢&‡GG3¢òöv—F‡V"æ6öÒ÷7öç6÷'2ö’ ¢Ð¢ÒÀ¢&Æ–6Vç6R#¢$Ô•B"À¢&FWVæFVæ6–W2#¢°¢&ææö–B#¢%ã2ã2ãb"À¢'–6ö6öÆ÷'2#¢%ããã"À¢'6÷W&6RÖÖÖ§2#¢%ãã"ã ¢ÒÀ¢&Væv–æW2#¢°¢&æöFR#¢%ãÇÂã"ÇÂãÓB ¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2÷&V7B#¢°¢'fW'6–öâ#¢#’ãã"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&r÷&V7BòÒ÷&V7BÓ’ããçFw¢"À¢&–çFVw&—G’#¢'6†S"Ôe2µ„d$çfã4uDw#f¦÷6ÅutæôgS„cF¶Ã£D6vDä´F¶E4u…•D6ä·FT”§““d'#e–'USÅ7¥cVE—F¤Ö´ÔFsÓÒ"À¢&Æ–6Vç6R#¢$Ô•B"À¢&Væv–æW2#¢°¢&æöFR#¢#ãÓãã ¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2÷&V7BÖFöÒ#¢°¢'fW'6–öâ#¢#’ãã"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&r÷&V7BÖFöÒòÒ÷&V7BÖFöÒÓ’ããçFw¢"À¢&–çFVw&—G’#¢'6†S"Õ‡3†FäR´G”¶vT„¦T§¦åÕ”Ô”$s5D´”„¤¥C“US†ä„Å7$VÄ¶ÄuEE#$…–gƒT4âôv³ef‚ö·W%DDÅSöäF²ösÓÒ"À¢&Æ–6Vç6R#¢$Ô•B"À¢&FWVæFVæ6–W2#¢°¢'66†VGVÆW"#¢%ãã#bã ¢ÒÀ¢'VW$FWVæFVæ6–W2#¢°¢'&V7B#¢%ã’ãã ¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2÷66†VGVÆW"#¢°¢'fW'6–öâ#¢#ã#bã"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&r÷66†VGVÆW"òÒ÷66†VGVÆW"Óã#bãçFw¢"À¢&–çFVw&—G’#¢'6†S"ÔæÄ‡wGD4’öÃVt5#4Cäå‡Et%VÔ'we§U”CD•…6$”G„'¤Ä”²ót—#VuDe4u¤EWS3t³V4Ôç„gG¤ó3‡43vutÓÒ"À¢&Æ–6Vç6R#¢$Ô•B ¢ÒÀ¢&æöFUöÖöGVÆW2÷6V×fW"#¢°¢'fW'6–öâ#¢#rã‚ãR"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&r÷6V×fW"òÒ÷6V×fW"Órã‚ãRçFw¢"À¢&–çFVw&—G’#¢'6†S"Õ“rô´G6#„Æ¦öõ§vw—VÄódEÆ·6t6æ66„„v²·5¤•“E4'eVö4Ô$TdƒUW#d“FEb´§fÃsf6§gV6–“CU&–ôÓÒ"À¢&Æ–6Vç6R#¢$•42"À¢&÷F–öæÂ#¢G'VRÀ¢&&–â#¢°¢'6V×fW"#¢&&–â÷6V×fW"æ§2 ¢ÒÀ¢&Væv–æW2#¢°¢&æöFR#¢#ãÓ ¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2÷6†'#¢°¢'fW'6–öâ#¢#ã3Rã2"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&r÷6†'òÒ÷6†'Óã3Rã2çFw¢"À¢&–çFVw&—G’#¢'6†S"ÖV£¥d‡U¤t„6”%†4ç†U–‡&åå7f$s…$ÖD$„D„Ä¶´5%e7³4——Sw's4¤×¦ö£$VTÓfc7D¤ÇEgvÃ#5ÓÒ"À¢&Æ–6Vç6R#¢$6†RÓ"ã"À¢&÷F–öæÂ#¢G'VRÀ¢&FWVæFVæ6–W2#¢°¢$–Örö6öÆ÷W"#¢%ããã"À¢&FWFV7BÖÆ–&2#¢%ã"ãã""À¢'6V×fW"#¢%ãrã‚ãR ¢ÒÀ¢&Væv–æW2#¢°¢&æöFR#¢#ãÓ#ã’ã ¢ÒÀ¢&gVæF–ær#¢°¢'W&Â#¢&‡GG3¢òö÷Væ6öÆÆV7F—fRæ6öÒöÆ–'f—2 ¢ÒÀ¢&÷F–öæÄFWVæFVæ6–W2#¢°¢$–Ör÷6†'ÖF'v–âÖ&ÓcB#¢#ã3Rã2"À¢$–Ör÷6†'ÖF'v–â×ƒcB#¢#ã3Rã2"À¢$–Ör÷6†'Ög&VV'6B×v6Ó3"#¢#ã3Rã2"À¢$–Ör÷6†'ÖÆ–'f—2ÖF'v–âÖ&ÓcB#¢#ã2ã""À¢$–Ör÷6†'ÖÆ–'f—2ÖF'v–â×ƒcB#¢#ã2ã""À¢$–Ör÷6†'ÖÆ–'f—2ÖÆ–çW‚Ö&Ò#¢#ã2ã""À¢$–Ör÷6†'ÖÆ–'f—2ÖÆ–çW‚Ö&ÓcB#¢#ã2ã""À¢$–Ör÷6†'ÖÆ–'f—2ÖÆ–çW‚×3cB#¢#ã2ã""À¢$–Ör÷6†'ÖÆ–'f—2ÖÆ–çW‚×&—67ccB#¢#ã2ã""À¢$–Ör÷6†'ÖÆ–'f—2ÖÆ–çW‚×33“‚#¢#ã2ã""À¢$–Ör÷6†'ÖÆ–'f—2ÖÆ–çW‚×ƒcB#¢#ã2ã""À¢$–Ör÷6†'ÖÆ–'f—2ÖÆ–çW†×W6ÂÖ&ÓcB#¢#ã2ã""À¢$–Ör÷6†'ÖÆ–'f—2ÖÆ–çW†×W6Â×ƒcB#¢#ã2ã""À¢$–Ör÷6†'ÖÆ–çW‚Ö&Ò#¢#ã3Rã2"À¢$–Ör÷6†'ÖÆ–çW‚Ö&ÓcB#¢#ã3Rã2"À¢$–Ör÷6†'ÖÆ–çW‚×3cB#¢#ã3Rã2"À¢$–Ör÷6†'ÖÆ–çW‚×&—67ccB#¢#ã3Rã2"À¢$–Ör÷6†'ÖÆ–çW‚×33“‚#¢#ã3Rã2"À¢$–Ör÷6†'ÖÆ–çW‚×ƒcB#¢#ã3Rã2"À¢$–Ör÷6†'ÖÆ–çW†×W6ÂÖ&ÓcB#¢#ã3Rã2"À¢$–Ör÷6†'ÖÆ–çW†×W6Â×ƒcB#¢#ã3Rã2"À¢$–Ör÷6†'×vV&6öçF–æW'2×v6Ó3"#¢#ã3Rã2"À¢$–Ör÷6†'×v–ã3"Ö&ÓcB#¢#ã3Rã2"À¢$–Ör÷6†'×v–ã3"Ö–3"#¢#ã3Rã2"À¢$–Ör÷6†'×v–ã3"×ƒcB#¢#ã3Rã2 ¢ÒÀ¢'VW$FWVæFVæ6–W4ÖWF#¢°¢$G—W2öæöFR#¢°¢&÷F–öæÂ#¢G'VP¢Ð¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2÷6÷W&6RÖÖÖ§2#¢°¢'fW'6–öâ#¢#ã"ã"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&r÷6÷W&6RÖÖÖ§2òÒ÷6÷W&6RÖÖÖ§2Óã"ãçFw¢"À¢&–çFVw&—G’#¢'6†S"ÕU…tÔ¶„Ä÷ud¶#s#„•WE‡†e•R·W6G–'EW$²ó‡TtS„5×g&„÷wg¤D'v£…4ÃtÕ3wd—4•4$s…e‚´”E‡eÓÒ"À¢&Æ–6Vç6R#¢$%4BÓ2Ô6ÆW6R"À¢&Væv–æW2#¢°¢&æöFR#¢#ãÓãã ¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2÷7G–ÆVBÖ§7‚#¢°¢'fW'6–öâ#¢#Rããb"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&r÷7G–ÆVBÖ§7‚òÒ÷7G–ÆVBÖ§7‚ÓRããbçFw¢"À¢&–çFVw&—G’#¢'6†S"×5g”EFTÖ÷FGe–ô…tÄäwu$d¤„2¶’µ§fD%%–÷4ôft2µvsgƒFg$ã"õ$rôäu5—d´äÆc3•$Å5$'Sfã…•¤ÓÒ"À¢&Æ–6Vç6R#¢$Ô•B"À¢&FWVæFVæ6–W2#¢°¢&6Æ–VçBÖöæÇ’#¢#ãã ¢ÒÀ¢&Væv–æW2#¢°¢&æöFR#¢#ãÒ"ãã ¢ÒÀ¢'VW$FWVæFVæ6–W2#¢°¢'&V7B#¢#ãÒbã‚ãÇÂrç‚ç‚ÇÂã‚ããÓÇÂã’ããÓ ¢ÒÀ¢'VW$FWVæFVæ6–W4ÖWF#¢°¢$&&VÂö6÷&R#¢°¢&÷F–öæÂ#¢G'VP¢ÒÀ¢&&&VÂ×ÇVv–âÖÖ7&÷2#¢°¢&÷F–öæÂ#¢G'VP¢Ð¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2÷F–Çv–æF772#¢°¢'fW'6–öâ#¢#Bã2ã2"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&r÷F–Çv–æF772òÒ÷F–Çv–æF772ÓBã2ã2çFw¢"À¢&–çFVw&—G’#¢'6†S"Ötö…c5wVdSc%Dvs¥fFt5"´WEc“&³&ä–…f5d¶4Æ×…C5T'5v†å¦£sV¢´×'CG¤Äcv–2·45–¦f‡„×†£u•ÓÒ"À¢&FWb#¢G'VRÀ¢&Æ–6Vç6R#¢$Ô•B ¢ÒÀ¢&æöFUöÖöGVÆW2÷F&ÆR#¢°¢'fW'6–öâ#¢#"ã2ã2"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&r÷F&ÆRòÒ÷F&ÆRÓ"ã2ã2çFw¢"À¢&–çFVw&—G’#¢'6†S"×W†2÷§fsgƒt3‡dôSvÆƒdÆ&F†TTÃ—¦ÕfÒõÆUE%&†ƒ„6vEv´£5V–Tw–fÓ$†GG5W'b´‡6†–4$Ö63dÓÒ"À¢&FWb#¢G'VRÀ¢&Æ–6Vç6R#¢$Ô•B"À¢&Væv–æW2#¢°¢&æöFR#¢#ãÓb ¢ÒÀ¢&gVæF–ær#¢°¢'G—R#¢&÷Væ6öÆÆV7F—fR"À¢'W&Â#¢&‡GG3¢òö÷Væ6öÆÆV7F—fRæ6öÒ÷vV'6² ¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2÷G6Æ–"#¢°¢'fW'6–öâ#¢#"ã‚ã"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&r÷G6Æ–"òÒ÷G6Æ–"Ó"ã‚ãçFw¢"À¢&–çFVw&—G’#¢'6†S"Öô¤gS“D…"´µfGU5UÃwvç×æfÔÇ4ôöäƒf#dTƒt4Vô³öÕU…Sf37t´Ecƒ4Ö´÷T…$‡E5„´µS“””&¥2ó'sÓÒ"À¢&Æ–6Vç6R#¢#%4B ¢ÒÀ¢&æöFUöÖöGVÆW2÷G—W67&—B#¢°¢'fW'6–öâ#¢#rãã""À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&r÷G—W67&—BòÒ÷G—W67&—BÓrãã"çFw¢"À¢&–çFVw&—G’#¢'6†S"Ó„e–S“fó4ä´ö†&¤¶’÷çdrõsV¦‡§†¶&FÓW6£”%¢óUCW5wã6„¦tÆdwƒ#w5$µ¥uGg—¤5†DÅ$%FcWD%E5%eTäÓÒ"À¢&FWb#¢G'VRÀ¢&Æ–6Vç6R#¢$6†RÓ"ã"À¢&&–â#¢°¢'G62#¢&&–â÷G62 ¢ÒÀ¢&Væv–æW2#¢°¢&æöFR#¢#ãÓbã#ã ¢ÒÀ¢&÷F–öæÄFWVæFVæ6–W2#¢°¢$G—W67&—B÷G—W67&—BÖ—‚×3cB#¢#rãã""À¢$G—W67&—B÷G—W67&—BÖF'v–âÖ&ÓcB#¢#rãã""À¢$G—W67&—B÷G—W67&—BÖF'v–â×ƒcB#¢#rãã""À¢$G—W67&—B÷G—W67&—BÖg&VV'6BÖ&ÓcB#¢#rãã""À¢$G—W67&—B÷G—W67&—BÖg&VV'6B×ƒcB#¢#rãã""À¢$G—W67&—B÷G—W67&—BÖÆ–çW‚Ö&Ò#¢#rãã""À¢$G—W67&—B÷G—W67&—BÖÆ–çW‚Ö&ÓcB#¢#rãã""À¢$G—W67&—B÷G—W67&—BÖÆ–çW‚ÖÆööæscB#¢#rãã""À¢$G—W67&—B÷G—W67&—BÖÆ–çW‚ÖÖ—3cFVÂ#¢#rãã""À¢$G—W67&—B÷G—W67&—BÖÆ–çW‚×3cB#¢#rãã""À¢$G—W67&—B÷G—W67&—BÖÆ–çW‚×&—67ccB#¢#rãã""À¢$G—W67&—B÷G—W67&—BÖÆ–çW‚×33“‚#¢#rãã""À¢$G—W67&—B÷G—W67&—BÖÆ–çW‚×ƒcB#¢#rãã""À¢$G—W67&—B÷G—W67&—BÖæWF'6BÖ&ÓcB#¢#rãã""À¢$G—W67&—B÷G—W67&—BÖæWF'6B×ƒcB#¢#rãã""À¢$G—W67&—B÷G—W67&—BÖ÷Væ'6BÖ&ÓcB#¢#rãã""À¢$G—W67&—B÷G—W67&—BÖ÷Væ'6B×ƒcB#¢#rãã""À¢$G—W67&—B÷G—W67&—B×7Væ÷2×ƒcB#¢#rãã""À¢$G—W67&—B÷G—W67&—B×v–ã3"Ö&ÓcB#¢#rãã""À¢$G—W67&—B÷G—W67&—B×v–ã3"×ƒcB#¢#rãã" ¢Ð¢ÒÀ¢&æöFUöÖöGVÆW2÷VæF–6’×G—W2#¢°¢'fW'6–öâ#¢#‚ã2ã"À¢'&W6öÇfVB#¢&‡GG3¢ò÷&Vv—7G'’æçÖ§2æ÷&r÷VæF–6’×G—W2òÒ÷VæF–6’×G—W2Ó‚ã2ãçFw¢"À¢&–çFVw&—G’#¢'6†S"Ö£3sU65ccFöÒµ–µd–eDÆ4ö•†´âö'T‡£Tvö&¤Æ†—„gTæç343–ÃDv×%wV¦u…t£t&$¦4e—DUVµ3vS†'¥ÓÒ"À¢&FWb#¢G'VRÀ¢&Æ–6Vç6R#¢$Ô•B ¢Ð¢Ð§Ð 
